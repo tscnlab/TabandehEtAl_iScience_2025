@@ -1,14 +1,14 @@
-# This repository was created for the SCENES Project
+# This repository was created for the spatial analysis of SCENES dataset (Natural scenes statistics paper)
 
 **Owner**: Niloufar Tabandeh
 
-  - `SCENES_automated_renaming.ipynb`: The code that reads all measurement files from the `temporary` folder and renames them based on the project naming convention and saves them with the same folder structure on the `raw` folder
+  - `utils\`: This folder is consists of `scenes_function` package, the collection of functions that have been used in other notebooks.
 
-  - `scenes_dataset_functions.ipynb`: It contains all functions for data analysis.
-  - `SCENES_quality_check.ipynb`:This is the code I am currently working on for quality control.
-  - `GIF_maker.ipynb`: It contains a function to create gif files from all GoPro images in one all-day measurement.
+  - `WP_derivatives`: It contains the preproccessing steps to generate results from 2D NumPy arrays of WestBoro Photonics device.
+  - `SCENES_spatial_analysis_paper`:This is the code I am currently working on for quality control.
+  
  The copy of the SCENES dataset is in this path: `\raw`
  
- The data trees, plots and gifs are stored in this path: `\results`
+ The data tables, dataframes, plots and paper figures are stored in main paper repository path: `C:\Users\ntabandeh\projects\SCENES-spatial-paper`
 
 
