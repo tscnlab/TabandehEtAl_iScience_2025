@@ -1,13 +1,17 @@
-name: spatialstatisticsenv
+name: spatialstatistics_env
 channels:
   - conda-forge
 dependencies:
   - conda-forge/win-64::miniforge_console_shortcut==1.0=h57928b3_0
-  - conda-forge/noarch::ca-certificates==2025.8.3=h4c7d964_0
+  - conda-forge/noarch::ca-certificates==2025.10.5=h4c7d964_0
+  - conda-forge/win-64::dart-sass==1.59.1=h57928b3_0
+  - conda-forge/win-64::esbuild==0.25.10=h11686cb_0
   - conda-forge/noarch::font-ttf-dejavu-sans-mono==2.37=hab24e00_0
   - conda-forge/noarch::font-ttf-inconsolata==3.000=h77eed37_0
   - conda-forge/noarch::font-ttf-source-code-pro==2.038=h77eed37_0
   - conda-forge/noarch::font-ttf-ubuntu==0.83=h77eed37_3
+  - conda-forge/win-64::nodejs==22.19.0=he453025_0
+  - conda-forge/win-64::pandoc==3.6.3=h57928b3_0
   - conda-forge/noarch::pybind11-abi==4=hd8ed1ab_3
   - conda-forge/noarch::python_abi==3.12=8_cp312
   - conda-forge/noarch::tzdata==2025b=h78e105d_0
@@ -44,14 +48,16 @@ dependencies:
   - conda-forge/win-64::lz4-c==1.10.0=h2466b09_1
   - conda-forge/win-64::lzo==2.10=h6a83c73_1002
   - conda-forge/win-64::nlohmann_json==3.11.3=he0c23c2_1
-  - conda-forge/win-64::openssl==3.5.2=h725018a_0
+  - conda-forge/win-64::openssl==3.5.4=h725018a_0
   - conda-forge/win-64::pixman==0.46.4=h5112557_1
   - conda-forge/win-64::qhull==2020.2=hc790b64_5
   - conda-forge/win-64::reproc==14.2.5.post0=h2466b09_0
   - conda-forge/win-64::simdjson==3.12.3=hc790b64_0
   - conda-forge/win-64::tk==8.6.13=h2c6b04d_2
+  - conda-forge/win-64::typst==0.13.0=ha073cba_0
   - conda-forge/win-64::yaml==0.2.5=h6a83c73_3
   - conda-forge/win-64::yaml-cpp==0.8.0=he0c23c2_0
+  - conda-forge/win-64::deno==2.3.1=hf25ef54_0
   - conda-forge/win-64::krb5==1.21.3=hdf4eb48_0
   - conda-forge/win-64::libbrotlidec==1.1.0=h2466b09_3
   - conda-forge/win-64::libbrotlienc==1.1.0=h2466b09_3
@@ -68,6 +74,7 @@ dependencies:
   - conda-forge/win-64::xorg-libxdmcp==1.1.5=h0e40799_0
   - conda-forge/win-64::zstd==1.5.7=hbeecb71_2
   - conda-forge/win-64::brotli-bin==1.1.0=h2466b09_3
+  - conda-forge/win-64::deno-dom==0.1.41=h1a6af48_0
   - conda-forge/win-64::libarchive==3.7.7=h5343c79_4
   - conda-forge/win-64::libclang13==20.1.8=default_hadf22e1_0
   - conda-forge/win-64::libcurl==8.14.1=h88aaa65_0
@@ -86,7 +93,7 @@ dependencies:
   - conda-forge/win-64::brotli==1.1.0=h2466b09_3
   - conda-forge/win-64::brotli-python==1.1.0=py312h275cf98_3
   - conda-forge/noarch::cached_property==1.5.2=pyha770c72_1
-  - conda-forge/noarch::certifi==2025.8.3=pyhd8ed1ab_0
+  - conda-forge/noarch::certifi==2025.10.5=pyhd8ed1ab_0
   - conda-forge/noarch::charset-normalizer==3.4.2=pyhd8ed1ab_0
   - conda-forge/noarch::colorama==0.4.6=pyhd8ed1ab_1
   - conda-forge/noarch::comm==0.2.3=pyhe01879c_0
@@ -96,6 +103,7 @@ dependencies:
   - conda-forge/noarch::decorator==5.2.1=pyhd8ed1ab_0
   - conda-forge/noarch::defusedxml==0.7.1=pyhd8ed1ab_0
   - conda-forge/noarch::distro==1.9.0=pyhd8ed1ab_1
+  - conda-forge/noarch::docopt==0.6.2=pyhd8ed1ab_2
   - conda-forge/noarch::et_xmlfile==2.0.0=pyhd8ed1ab_1
   - conda-forge/noarch::executing==2.2.0=pyhd8ed1ab_0
   - conda-forge/win-64::frozendict==2.4.6=py312he06e257_1
@@ -133,6 +141,7 @@ dependencies:
   - conda-forge/win-64::pywin32==311=py312h829343e_0
   - conda-forge/win-64::pywinpty==2.0.15=py312h275cf98_0
   - conda-forge/win-64::pyyaml==6.0.2=py312h31fea79_2
+  - conda-forge/win-64::quarto==1.8.25=hfeaa22a_0
   - conda-forge/noarch::rfc3986-validator==0.1.1=pyh9f0ad1d_0
   - conda-forge/win-64::rpds-py==0.27.0=py312hdabe01f_0
   - conda-forge/win-64::ruamel.yaml.clib==0.2.8=py312h4389bb4_1
@@ -237,8 +246,10 @@ dependencies:
   - conda-forge/noarch::patsy==1.0.1=pyhd8ed1ab_1
   - conda-forge/win-64::qt6-main==6.9.1=h02ddd7d_2
   - conda-forge/win-64::scipy==1.16.1=py312hb2f131f_0
+  - conda-forge/noarch::yarg==0.1.9=py_1
   - conda-forge/win-64::matplotlib-base==3.10.5=py312h0ebf65c_0
   - conda-forge/noarch::nbconvert-core==7.16.6=pyh29332c3_0
+  - conda-forge/noarch::pipreqs==0.4.13=pyhd8ed1ab_0
   - conda-forge/win-64::pyside6==6.9.1=py312h0ba07f7_0
   - conda-forge/win-64::statsmodels==0.14.5=py312h196c9fc_0
   - conda-forge/noarch::jupyter_server==2.17.0=pyhcf101f3_0
@@ -249,5 +260,3 @@ dependencies:
   - conda-forge/noarch::notebook-shim==0.2.4=pyhd8ed1ab_1
   - conda-forge/noarch::seaborn==0.13.2=hd8ed1ab_3
   - conda-forge/noarch::jupyterlab==4.4.6=pyhd8ed1ab_0
-  - pipreqs
-prefix: C:\Users\ntabandeh\AppData\Local\miniforge3\envs\spatialstatisticsenv
