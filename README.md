@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This Python code repository contains code, analysis, and output materials for the publication Tabandeh, N., & Spitschan, M. (2026). **"Photoreceptor-specific scene statistics reveal melanopic structure in natural environments"**. iScience, Article 116661. https://doi.org/10.1016/j.isci.2026.116661
+This Python code repository contains code, analysis, and output materials for the publication: Tabandeh, N., & Spitschan, M. (2026). **"Photoreceptor-specific scene statistics reveal melanopic structure in natural environments"**. iScience, Article 116661. https://doi.org/10.1016/j.isci.2026.116661
 
 If you have any comments or queries, please reach out to us at [Niloufar Tabandeh](mailto:niloufar.tabandehsaravi@tum.de) and [Manuel Spitschan](mailto:manuel.spitschan@tum.de).
 
