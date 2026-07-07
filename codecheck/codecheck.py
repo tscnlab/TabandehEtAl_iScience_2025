@@ -23,11 +23,11 @@ def name_orcid(entry):
 
 def multiple_name_orcid(entries):
     """Helper function for multiple people to return their Name + ORCID"""
-    return f"{', '.join([name_orcid(a) for a in entries])}"
+    return f"{', '.join([name_orcid(a) for a in ([entries] if isinstance(entries, dict) else entries)])}"
 
 def multiple_name(entries):
     """Helper function for multiple people to return their Name + ORCID"""
-    return f"{', '.join([a['name'] for a in entries])}"
+    return f"{', '.join([a['name'] for a in ([entries] if isinstance(entries, dict) else entries)])}"
 
 def url_link(url):
     """Helper function to create Markdown links for the full URL with the protocol in front."""
